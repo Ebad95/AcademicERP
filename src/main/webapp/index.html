@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students - Courses</title>
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assests/css/form-validation.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container">
+    <div class="py-5 text-center">
+        <img alt="" class="d-block mx-auto mb-4" height="72" src="assests/svg/bootstrap-solid.svg" width="72">
+        <h2>Academic ERP</h2>
+        <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Please fill in necessary
+            details, like student details and courses details</p>
+    </div>
+
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Course Details</h4>
+        <form class="needs-validation-courses" id="course-validation" novalidate>
+            <div class="mb-3">
+                <label for="course_code">Course code</label>
+                <input class="form-control" id="course_code" placeholder="" required type="text" value="">
+                <div class="invalid-feedback">
+                    Valid course name is required.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="name">Name</label>
+                <input class="form-control" id="name" placeholder="" required type="text" value="">
+                <div class="invalid-feedback">
+                    Valid course name is required.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="description">Description</label>
+                <input class="form-control" id="description" placeholder="" required type="text">
+                <div class="invalid-feedback">
+                    Please enter a valid description of the course.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="year">Year</label>
+                <input class="form-control" id="year" placeholder="" required type="number">
+                <div class="invalid-feedback">
+                    Please enter a valid year for the course
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="term">Term</label>
+                <input class="form-control" id="term" placeholder="" required type="text">
+                <div class="invalid-feedback">
+                    Please enter a valid term of the course.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="credits">Credits</label>
+                <input class="form-control" id="credits" placeholder="" required type="number" value="4">
+                <div class="invalid-feedback">
+                    Valid credits of the course is required.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="capacity">Capacity</label>
+                <input class="form-control" id="capacity" placeholder="" required type="number">
+                <div class="invalid-feedback">
+                    Please enter a valid capacity of the course.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="faculty">Faculty</label>
+                <input class="form-control" id="faculty" placeholder="" required type="text">
+                <div class="invalid-feedback">
+                    Please enter a valid faculty name.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="specialization">Specialization</label>
+                <select class="custom-select d-block w-100" id="specialization" required>
+                    <option value="">Choose...</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid course/s.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="prereq">Prerequisite</label>
+                <select class="custom-select d-block w-100" id="prereq" required>
+                    <option value="">Choose...</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid course/s.
+                </div>
+            </div>
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to register</button>
+        </form>
+    </div>
+</div>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+</footer>
+</body>
+<script src="assests/js/jquery.min.js"></script>
+<script src="assests/js/bootstrap.min.js"></script>
+<script src="assests/js/form-validation.js"></script>
+</html>
